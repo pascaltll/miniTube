@@ -1,0 +1,22 @@
+{
+  "adblock": true,
+  "ocultar_shorts": false,
+  "sin_pausa_inactividad": true,
+  "ocultar_barras": true,
+  "zoom": 1.0,
+  "bloqueo_red": false,
+  "modal": "normal",
+  "botones": "pagina",
+  "mini_modo": "video",
+  "mini_esquina": "abajo-derecha",
+  "mini_ancho": 420,
+  "mini_margen": 16,
+  "mini_margen_inferior": 64,
+  "mini_nivel": 1,
+  "mini_calidad": "medium",
+  "ventana_calidad": "ajustada",
+  "mini_mover_tactil": true,
+  "fix_filas": true,
+  "cdp_network": false,
+  "fetch_solo_documento": false
+}

@@ -1,0 +1,5 @@
+(()=>{const o={};const b=window.__bv;try{o.opciones=JSON.stringify(b.m_browserViewOptions)}catch(e){o.opciones=String(e)}
+const re=/perm|media|mic|audio|capture|webrtc|speech|voice/i;
+const scan=(name,obj)=>{try{const r=new Set();let p=obj;for(let i=0;i<3&&p&&p!==Object.prototype;i++){Object.getOwnPropertyNames(p).forEach(k=>r.add(k));p=Object.getPrototypeOf(p)}o[name]=[...r].filter(k=>re.test(k)).slice(0,30)}catch(e){o[name]=String(e)}};
+scan('SteamClient',window.SteamClient);scan('Browser',window.SteamClient&&SteamClient.Browser);scan('BrowserView',window.SteamClient&&SteamClient.BrowserView);scan('vista',b&&b.m_browserView);scan('Settings',window.SteamClient&&SteamClient.Settings);scan('System',window.SteamClient&&SteamClient.System);scan('WebChat',window.SteamClient&&SteamClient.WebChat);
+return JSON.stringify(o)})()

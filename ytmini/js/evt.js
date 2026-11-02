@@ -1,0 +1,3 @@
+(()=>{const m=window.__bvwrap||window.__bvmel;const d=m?m.ownerDocument:null;if(!d)return 'sin modal ni mini';
+if(!window.__bvev){window.__bvev=[];['pointerdown','pointerup','pointercancel','click','mousedown','mouseup','touchstart','touchend'].forEach(n=>d.addEventListener(n,e=>{const L=window.__bvev;L.push([n,e.pointerType||'',Math.round(e.clientX||0),Math.round(e.clientY||0),String(e.target.className||e.target.tagName).slice(0,24),!!(e.target.closest&&e.target.closest('[data-ytm-root]'))]);if(L.length>40)L.shift()},true));return 'registrando eventos: toca y vuelve a correr eventos'}
+const o=JSON.stringify(window.__bvev);window.__bvev.length=0;return o})()

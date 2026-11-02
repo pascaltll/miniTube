@@ -1,0 +1,1 @@
+(()=>{try{window.DFL.Navigation.CloseSideMenus()}catch(e){};window.DFL.Navigation.NavigateToExternalWeb(%s);return 'ok'})()

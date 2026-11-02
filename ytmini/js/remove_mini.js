@@ -1,0 +1,1 @@
+(()=>{try{window.DeckyPluginLoader.routerHook.removeGlobalComponent('ytmini-mini')}catch(e){}window.__bvmini=false;return 'ok'})()

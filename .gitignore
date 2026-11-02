@@ -1,0 +1,12 @@
+ytmini.json
+ytmini.log
+capturas/
+crashes/
+reportes/
+respaldos/
+.venv/
+desarrollo/
+old/
+__pycache__/
+*.pyc
+dist/

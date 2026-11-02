@@ -1,0 +1,1 @@
+(()=>{const v=document.querySelector('video');if(v)v.pause();return 'ok'})()

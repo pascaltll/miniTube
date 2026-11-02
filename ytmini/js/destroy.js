@@ -1,0 +1,1 @@
+(()=>{try{window.__bvtok&&(window.__bvtok.e=true)}catch(e){}try{window.__bvm&&window.__bvm.Close()}catch(e){}try{window.__bv&&window.__bv.Destroy()}catch(e){}window.__bvm=null;window.__bv=null;return 'ok'})()

@@ -1,0 +1,23 @@
+name: Report a problem
+description: Something fails (unexpected close, no audio, will not open...)
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes: {label: MiniTube version, placeholder: "0.50.0"}
+    validations: {required: true}
+  - type: input
+    id: device
+    attributes: {label: Device and OS, placeholder: "ROG Ally, Bazzite 42 / Steam Deck, SteamOS 3.7"}
+  - type: textarea
+    id: what
+    attributes: {label: What happened?, description: What did you expect and what happened instead.}
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes: {label: Steps to reproduce}
+  - type: textarea
+    id: report
+    attributes:
+      label: Report
+      description: "Run `./launcher.sh report`, review the file in reportes/ and paste its content here or attach it. Your username, hostname and IPs are hidden automatically. Nothing is ever sent on its own."

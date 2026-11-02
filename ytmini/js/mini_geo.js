@@ -1,0 +1,2 @@
+(()=>{const e=window.__bvmel;if(!e)return 'sin elemento';const r=e.getBoundingClientRect(),c=e.firstElementChild,rc=c&&c.getBoundingClientRect();
+return JSON.stringify({tarjeta:[r.x,r.y,r.width,r.height].map(Math.round),hijo:rc?[rc.x,rc.y,rc.width,rc.height].map(Math.round):null,ventana:[innerWidth,innerHeight]})})()

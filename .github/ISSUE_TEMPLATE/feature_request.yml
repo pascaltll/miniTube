@@ -1,0 +1,8 @@
+name: Suggest an improvement
+description: An idea for MiniTube
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes: {label: What would you like?}
+    validations: {required: true}

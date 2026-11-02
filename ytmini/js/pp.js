@@ -1,0 +1,1 @@
+(()=>{const v=document.querySelector('video');if(!v)return 'sin video';if(v.paused)v.play();else v.pause();return v.paused?'pausado':'reproduciendo'})()

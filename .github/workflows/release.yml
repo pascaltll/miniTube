@@ -1,0 +1,21 @@
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Empaquetar
+        run: bash tools/empaquetar.sh "${GITHUB_REF_NAME#v}"
+      - name: Notas
+        run: awk -v v="${GITHUB_REF_NAME#v}" '$0 ~ "^## "v{f=1;next} /^## /{f=0} f' CHANGELOG.md > notas.md
+      - uses: softprops/action-gh-release@v2
+        with:
+          body_path: notas.md
+          files: |
+            dist/*.zip
+            dist/*.sha256

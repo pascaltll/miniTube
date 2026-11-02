@@ -1,0 +1,2 @@
+(()=>{const L=window.DeckyPluginLoader,o={loader:typeof L};try{o.routerHook=Object.keys(L.routerHook||{}).concat(Object.getOwnPropertyNames(Object.getPrototypeOf(L.routerHook)||{})).slice(0,40)}catch(e){o.routerHook=String(e)}
+try{o.Overlay=Object.keys(SteamClient.Overlay||{}).slice(0,40)}catch(e){}try{o.Window=Object.keys(SteamClient.Window||{}).slice(0,40)}catch(e){}return JSON.stringify(o)})()
